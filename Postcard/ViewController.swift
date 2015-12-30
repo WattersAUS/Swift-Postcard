@@ -36,6 +36,8 @@ class ViewController: UIViewController {
         nameLabel.hidden = false
         enterMessageTextField.text = ""
         enterNameTextField.text = ""
+        // need one of each in case user exits from either field
+        enterNameTextField.resignFirstResponder()
         enterMessageTextField.resignFirstResponder()
         
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
